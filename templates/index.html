@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Início - Histórico de Programações{% endblock %}
+
+{% block content %}
+<section class="historico">
+    <h2>Programações Recentes</h2>
+    <ul>
+        {% for prog in programacoes %}
+        <li>
+            <h3>{{ prog.titulo }}</h3>
+            <p><strong>Data:</strong> {{ prog.data.strftime('%d/%m/%Y') }}</p>
+            <p><strong>Descrição:</strong> {{ prog.descricao }}</p>
+            <p><strong>Diretor:</strong> {{ prog.diretor }}</p>
+        </li>
+        {% else %}
+        <li>Nenhuma programação encontrada.</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}

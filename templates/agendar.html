@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Agendar Cronograma{% endblock %}
+
+{% block content %}
+<section class="agendar">
+    <h2>Agendar Nova Programação</h2>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <form method="post" action="{{ url_for('agendar') }}">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="diretor">Diretor:</label>
+        <input type="text" id="diretor" name="diretor" required>
+
+        <button type="submit">Agendar</button>
+    </form>
+</section>
+{% endblock %}

@@ -1,0 +1,151 @@
+/* Fonte principal inspirada no site da Igreja Bola de Neve */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50; /* Cor de fundo inspirada */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav {
+    background-color: #34495e; /* Cor de fundo inspirada */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1abc9c; /* Efeito hover inspirado */
+}
+
+main {
+    padding: 20px;
+}
+
+.historico, .agendar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.historico h2, .agendar h2 {
+    color: #2c3e50; /* Cor inspirada */
+}
+
+.historico ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.historico ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.historico ul li h3 {
+    margin: 0;
+    color: #34495e; /* Cor inspirada */
+}
+
+/* Estilos para a seção de agendamento */
+.agendar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.agendar h2 {
+    color: #2c3e50; /* Cor inspirada */
+    text-align: center;
+}
+
+.agendar form {
+    display: flex;
+    flex-direction: column;
+}
+
+.agendar label {
+    margin-top: 10px;
+    color: #34495e; /* Cor inspirada */
+}
+
+.agendar input[type="text"],
+.agendar input[type="date"],
+.agendar textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.agendar button {
+    background-color: #2c3e50; /* Cor inspirada */
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.agendar button:hover {
+    background-color: #1abc9c; /* Efeito hover inspirado */
+}
+
+/* Estilos para mensagens flash */
+.flashes {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.flashes li {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.flashes li.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.flashes li.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+ 

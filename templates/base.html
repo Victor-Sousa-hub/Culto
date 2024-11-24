@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Histórico de Programações{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+    <!-- Fonte inspirada no site da Igreja Bola de Neve -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Histórico de Programações</h1>
+    </header>
+    <nav>
+        <ul>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Início</a></li>
+                    <li><a href="{{ url_for('agendar') }}">Agendar Cronograma</a></li>
+                    <li><a href="/verificar">Verificar Programação</a></li>
+                    <!-- Adicione mais links conforme necessário -->
+                </ul>
+            </nav>
+            
+            <!-- Adicione mais links conforme necessário -->
+        </ul>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Sua Igreja. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
